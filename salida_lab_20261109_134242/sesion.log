@@ -1,0 +1,105 @@
+== PROBE-RIOBAMBA-LAB | RUN-20261109T134242Z ==
+hostname=vxralos usuario=root fecha=2026-11-09T08:42:42-05:00
+interfaz=wlp2s0 (cable) ip=10.70.39.32 gateway=10.70.39.64
+Captura de paquetes: DESACTIVADA (solo trafico propio de la sonda)
+Ciclos=5 periodo=900s -> duracion minima aprox. 60 min
+
+=== Ciclo 1/5  2026-11-09T08:42:42-05:00 ===
+  ping      institucional srv_referencia    OK             perdida_pct=0.0 rtt_min_ms=102.814 rtt_mediana_ms=138.5 
+  ping      institucional dns1_espoch       OK             perdida_pct=0.0 rtt_min_ms=7.923 rtt_mediana_ms=17.55 
+  ping      externo       google_dns        OK             perdida_pct=0.0 rtt_min_ms=88.16 rtt_mediana_ms=139.0 
+  ping      externo       cloudflare        OK             perdida_pct=0.0 rtt_min_ms=22.522 rtt_mediana_ms=86.3 
+  traceroute institucional srv_referencia    OK             saltos_total=16 saltos_sin_respuesta=4 destino_alcanzado=1 
+  traceroute institucional dns1_espoch       OK             saltos_total=6 saltos_sin_respuesta=0 destino_alcanzado=1 
+  traceroute externo       google_dns        OK             saltos_total=16 saltos_sin_respuesta=4 destino_alcanzado=1 
+  traceroute externo       cloudflare        OK             saltos_total=12 saltos_sin_respuesta=4 destino_alcanzado=1 
+  dig       institucional dns1_espoch       OK             dns_ms=68.0 respuesta_A=172.17.102.40;172.17.102.39;172.17.102.39;172.17.102.40 
+  dig       institucional dns2_espoch       OK             dns_ms=10.0 respuesta_A=172.17.102.40;172.17.102.39;172.17.102.39;172.17.102.40 
+  dig       externo       google_dns        OK             dns_ms=119.0 respuesta_A=187.251.160.35 
+  iperf3_tcp institucional srv_referencia    OK             mbps_enviado=46.443 mbps_recibido=45.088 retransmisiones=18 
+  iperf3_udp institucional srv_referencia    TIMEOUT         (iperf3 no termino en el tiempo esperado)
+  iperf3_tcp externo       speedtest_masnet  OK             mbps_enviado=26.212 mbps_recibido=25.342 retransmisiones=35 
+  iperf3_udp externo       speedtest_masnet  TIMEOUT         (iperf3 no termino en el tiempo esperado)
+
+(esperando 784 s para el ciclo 2; Ctrl+C para terminar)
+
+=== Ciclo 2/5  2026-11-09T08:57:42-05:00 ===
+  ping      institucional srv_referencia    OK             perdida_pct=0.0 rtt_min_ms=86.344 rtt_mediana_ms=164.0 
+  ping      institucional dns1_espoch       OK             perdida_pct=0.0 rtt_min_ms=6.157 rtt_mediana_ms=27.8 
+  ping      externo       google_dns        OK             perdida_pct=0.0 rtt_min_ms=85.79 rtt_mediana_ms=124.0 
+  ping      externo       cloudflare        OK             perdida_pct=0.0 rtt_min_ms=21.974 rtt_mediana_ms=48.05 
+  traceroute institucional srv_referencia    OK             saltos_total=16 saltos_sin_respuesta=4 destino_alcanzado=1 
+  traceroute institucional dns1_espoch       OK             saltos_total=6 saltos_sin_respuesta=0 destino_alcanzado=1 
+  traceroute externo       google_dns        OK             saltos_total=16 saltos_sin_respuesta=4 destino_alcanzado=1 
+  traceroute externo       cloudflare        OK             saltos_total=12 saltos_sin_respuesta=5 destino_alcanzado=1 
+  dig       institucional dns1_espoch       OK             dns_ms=26.0 respuesta_A=172.17.102.39;172.17.102.40;172.17.102.39;172.17.102.40 
+  dig       institucional dns2_espoch       OK             dns_ms=17.0 respuesta_A=172.17.102.39;172.17.102.40;172.17.102.39;172.17.102.40 
+  dig       externo       google_dns        OK             dns_ms=219.0 respuesta_A=187.251.160.35 
+  iperf3_tcp institucional srv_referencia    OK             mbps_enviado=34.914 mbps_recibido=34.052 retransmisiones=42 
+  iperf3_udp institucional srv_referencia    TIMEOUT         (iperf3 no termino en el tiempo esperado)
+  iperf3_tcp externo       speedtest_masnet  OK             mbps_enviado=34.076 mbps_recibido=32.923 retransmisiones=35 
+  iperf3_udp externo       speedtest_masnet  TIMEOUT         (iperf3 no termino en el tiempo esperado)
+
+(esperando 789 s para el ciclo 3; Ctrl+C para terminar)
+
+=== Ciclo 3/5  2026-11-09T09:12:42-05:00 ===
+  ping      institucional srv_referencia    OK             perdida_pct=0.0 rtt_min_ms=131.723 rtt_mediana_ms=194.0 
+  ping      institucional dns1_espoch       OK             perdida_pct=0.0 rtt_min_ms=5.185 rtt_mediana_ms=64.8 
+  ping      externo       google_dns        OK             perdida_pct=0.0 rtt_min_ms=87.874 rtt_mediana_ms=143.0 
+  ping      externo       cloudflare        OK             perdida_pct=0.0 rtt_min_ms=24.105 rtt_mediana_ms=42.35 
+  traceroute institucional srv_referencia    OK             saltos_total=16 saltos_sin_respuesta=3 destino_alcanzado=1 
+  traceroute institucional dns1_espoch       OK             saltos_total=6 saltos_sin_respuesta=0 destino_alcanzado=1 
+  traceroute externo       google_dns        OK             saltos_total=16 saltos_sin_respuesta=4 destino_alcanzado=1 
+  traceroute externo       cloudflare        OK             saltos_total=12 saltos_sin_respuesta=5 destino_alcanzado=1 
+  dig       institucional dns1_espoch       OK             dns_ms=82.0 respuesta_A=172.17.102.39;172.17.102.40;172.17.102.39;172.17.102.40 
+  dig       institucional dns2_espoch       OK             dns_ms=7.0 respuesta_A=172.17.102.39;172.17.102.40;172.17.102.39;172.17.102.40 
+  dig       externo       google_dns        OK             dns_ms=91.0 respuesta_A=187.251.160.35 
+  iperf3_tcp institucional srv_referencia    FALLO           (unable to receive control message - port may not be availabl)
+  iperf3_udp institucional srv_referencia    TIMEOUT         (iperf3 no termino en el tiempo esperado)
+  iperf3_tcp externo       speedtest_masnet  OK             mbps_enviado=46.864 mbps_recibido=46.009 retransmisiones=10 
+  iperf3_udp externo       speedtest_masnet  TIMEOUT         (iperf3 no termino en el tiempo esperado)
+
+(esperando 790 s para el ciclo 4; Ctrl+C para terminar)
+
+=== Ciclo 4/5  2026-11-09T09:27:42-05:00 ===
+  ping      institucional srv_referencia    OK             perdida_pct=0.0 rtt_min_ms=110.813 rtt_mediana_ms=159.5 
+  ping      institucional dns1_espoch       OK             perdida_pct=0.0 rtt_min_ms=8.057 rtt_mediana_ms=39.05 
+  ping      externo       google_dns        OK             perdida_pct=0.0 rtt_min_ms=89.771 rtt_mediana_ms=151.0 
+  ping      externo       cloudflare        OK             perdida_pct=10.0 rtt_min_ms=20.274 rtt_mediana_ms=41.2 
+  traceroute institucional srv_referencia    OK             saltos_total=16 saltos_sin_respuesta=4 destino_alcanzado=1 
+  traceroute institucional dns1_espoch       OK             saltos_total=6 saltos_sin_respuesta=0 destino_alcanzado=1 
+  traceroute externo       google_dns        OK             saltos_total=16 saltos_sin_respuesta=4 destino_alcanzado=1 
+  traceroute externo       cloudflare        OK             saltos_total=12 saltos_sin_respuesta=5 destino_alcanzado=1 
+  dig       institucional dns1_espoch       OK             dns_ms=108.0 respuesta_A=172.17.102.39;172.17.102.40;172.17.102.39;172.17.102.40 
+  dig       institucional dns2_espoch       OK             dns_ms=66.0 respuesta_A=172.17.102.40;172.17.102.39;172.17.102.39;172.17.102.40 
+  dig       externo       google_dns        OK             dns_ms=121.0 respuesta_A=187.251.160.35 
+  iperf3_tcp institucional srv_referencia    OK             mbps_enviado=19.921 mbps_recibido=19.456 retransmisiones=6 
+  iperf3_udp institucional srv_referencia    TIMEOUT         (iperf3 no termino en el tiempo esperado)
+  iperf3_tcp externo       speedtest_masnet  OK             mbps_enviado=50.645 mbps_recibido=48.933 retransmisiones=25 
+  iperf3_udp externo       speedtest_masnet  TIMEOUT         (iperf3 no termino en el tiempo esperado)
+
+(esperando 788 s para el ciclo 5; Ctrl+C para terminar)
+
+=== Ciclo 5/5  2026-11-09T09:42:42-05:00 ===
+  ping      institucional srv_referencia    OK             perdida_pct=0.0 rtt_min_ms=87.077 rtt_mediana_ms=93.5 
+  ping      institucional dns1_espoch       OK             perdida_pct=0.0 rtt_min_ms=5.878 rtt_mediana_ms=8.63 
+  ping      externo       google_dns        OK             perdida_pct=0.0 rtt_min_ms=85.389 rtt_mediana_ms=87.65 
+  ping      externo       cloudflare        OK             perdida_pct=0.0 rtt_min_ms=19.699 rtt_mediana_ms=23.45 
+  traceroute institucional srv_referencia    OK             saltos_total=16 saltos_sin_respuesta=4 destino_alcanzado=1 
+  traceroute institucional dns1_espoch       OK             saltos_total=6 saltos_sin_respuesta=0 destino_alcanzado=1 
+  traceroute externo       google_dns        OK             saltos_total=16 saltos_sin_respuesta=4 destino_alcanzado=1 
+  traceroute externo       cloudflare        OK             saltos_total=12 saltos_sin_respuesta=5 destino_alcanzado=1 
+  dig       institucional dns1_espoch       OK             dns_ms=7.0 respuesta_A=172.17.102.39;172.17.102.40;172.17.102.39;172.17.102.40 
+  dig       institucional dns2_espoch       OK             dns_ms=12.0 respuesta_A=172.17.102.39;172.17.102.40;172.17.102.39;172.17.102.40 
+  dig       externo       google_dns        OK             dns_ms=87.0 respuesta_A=187.251.160.35 
+  iperf3_tcp institucional srv_referencia    OK             mbps_enviado=30.3 mbps_recibido=29.938 retransmisiones=8 
+  iperf3_udp institucional srv_referencia    TIMEOUT         (iperf3 no termino en el tiempo esperado)
+  iperf3_tcp externo       speedtest_masnet  OK             mbps_enviado=45.082 mbps_recibido=43.732 retransmisiones=30 
+  iperf3_udp externo       speedtest_masnet  TIMEOUT         (iperf3 no termino en el tiempo esperado)
+
+== Fin de la sesion ==
+inicio: 2026-11-09T13:42:42.499Z
+fin   : 2026-11-09T14:44:33.147Z
+duracion: 61.8 min | ciclos completos: 5/5
+verificacion: {"filas": 280, "ciclos_completados": 5, "filas_sin_timestamp": 0, "filas_con_valor_vacio": 0, "filas_por_estado": {"OK": 237, "TIMEOUT": 40, "FALLO": 3}}
+archivos en salida_lab_20261109_134242: run.json, mediciones.csv, mediciones.json, resumen.csv, sesion.log

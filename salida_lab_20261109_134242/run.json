@@ -1,0 +1,122 @@
+{
+  "run_id": "RUN-20261109T134242Z",
+  "probe_id": "PROBE-RIOBAMBA-LAB",
+  "inicio_utc": "2026-11-09T13:42:42.499Z",
+  "inicio_local": "2026-11-09T08:42:42-05:00",
+  "fin_utc": "2026-11-09T14:44:33.147Z",
+  "duracion_s": 3710.6,
+  "equipo": {
+    "hostname": "vxralos",
+    "usuario": "root",
+    "sistema": "Linux-7.2.11-arch1-1-x86_64-with-glibc2.44",
+    "python": "3.14.9",
+    "euid": 0,
+    "interfaz": "wlp2s0",
+    "ip_sonda": "10.70.39.32",
+    "gateway": "10.70.39.64",
+    "tipo_enlace": "cable",
+    "velocidad_mbps": 1000
+  },
+  "herramientas": {
+    "ping": "ping from iputils 20250605",
+    "traceroute": "Modern traceroute for Linux, version 2.1.6",
+    "dig": "DiG 9.20.30",
+    "iperf3": "iperf 3.22 (cJSON 1.7.15)"
+  },
+  "captura_paquetes": false,
+  "config_sha256": "82daa553b20ccd4d16b2910da2d381d398596c665f53526dc425f72a664523c6",
+  "config": {
+    "probe_id": "PROBE-RIOBAMBA-LAB",
+    "ping": {
+      "count": 10,
+      "interval_s": 1.0,
+      "wait_s": 2
+    },
+    "destinos": [
+      {
+        "nombre": "srv_referencia",
+        "dominio": "institucional",
+        "host": "172.17.103.102"
+      },
+      {
+        "nombre": "dns1_espoch",
+        "dominio": "institucional",
+        "host": "172.17.102.39"
+      },
+      {
+        "nombre": "google_dns",
+        "dominio": "externo",
+        "host": "8.8.8.8"
+      },
+      {
+        "nombre": "cloudflare",
+        "dominio": "externo",
+        "host": "1.1.1.1"
+      }
+    ],
+    "traceroute": {
+      "max_hops": 20,
+      "wait_s": 1,
+      "icmp": "auto"
+    },
+    "dns": {
+      "name": "espoch.edu.ec",
+      "servers": [
+        {
+          "nombre": "dns1_espoch",
+          "dominio": "institucional",
+          "host": "172.17.102.39"
+        },
+        {
+          "nombre": "dns2_espoch",
+          "dominio": "institucional",
+          "host": "172.17.102.40"
+        },
+        {
+          "nombre": "google_dns",
+          "dominio": "externo",
+          "host": "8.8.8.8"
+        }
+      ]
+    },
+    "iperf": {
+      "duracion_s": 10,
+      "udp_bitrate": "50M",
+      "reverse": false,
+      "precheck_timeout_s": 3,
+      "destinos": [
+        {
+          "nombre": "srv_referencia",
+          "dominio": "institucional",
+          "host": "172.17.103.102",
+          "port": 5201,
+          "extra": []
+        },
+        {
+          "nombre": "speedtest_masnet",
+          "dominio": "externo",
+          "host": "speedtest.masnet.ec",
+          "port": 5201,
+          "extra": [
+            "-4"
+          ]
+        }
+      ]
+    },
+    "ciclos": 5,
+    "periodo_s": 900,
+    "output_dir": "salida_lab"
+  },
+  "fin_local": "2026-11-09T09:44:33-05:00",
+  "verificacion": {
+    "filas": 280,
+    "ciclos_completados": 5,
+    "filas_sin_timestamp": 0,
+    "filas_con_valor_vacio": 0,
+    "filas_por_estado": {
+      "OK": 237,
+      "TIMEOUT": 40,
+      "FALLO": 3
+    }
+  }
+}
